@@ -18,7 +18,7 @@
             <x-jet-authentication-card-logo />
         </x-slot>
 
-        <x-jet-validation-errors class="mb-4" />
+        <x-jet-validation-errors class="" />
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
@@ -81,7 +81,7 @@
                                     <span>Luxe Tribes!</span>
                                 </h4>
                             </div>
-                            <x-jet-validation-errors class="mb-4" />
+                            <x-jet-validation-errors class="" />
                                 <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="flex items-start mb-2">
@@ -101,13 +101,13 @@
                                     <hr class="mb-6">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="mb-4">
+                                            <div class="">
                                                 <input type="text" class="form-control " id="name" name="name"
                                                     placeholder="Full name" value="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="mb-4">
+                                            <div class="">
                                                 <input type="date" class="form-control datepicker " id="dob" name="dob"
                                                     placeholder="dob" value="" required>
                                             </div>
@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="mb-4">
+                                            <div class="">
                                                 <select name="country_id" id="nationality" class="form-control select2 "
                                                     required>
                                                     <option hidden selected disabled>Select nationality</option>
@@ -377,7 +377,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="mb-4">
+                                            <div class="">
                                                 <input type="email" class="form-control " id="email" name="email"
                                                     placeholder="Email" value="" required>
                                             </div>
@@ -386,8 +386,8 @@
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="mb-4">
-                                                <input type="tel" class="form-controlw-full " id="phone"
+                                            <div class="">
+                                                <input type="tel" class="form-control w-full" id="phone"
                                                     name="phone_number" placeholder="Phone Number" value="" required>
                                                 <span id="output" class="invalid-feedback"></span>
                                             </div>
@@ -395,14 +395,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="mb-4">
-                                                <input type="text" class="form-controlw-full " 
+                                            <div class="">
+                                                <input type="text" class="form-control" 
                                                     name="username" placeholder="UserName" value="" required>
                                                 <span id="output" class="invalid-feedback"></span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="mb-4">
+                                            <div class="">
                                                 <input id="password" type="password" class="form-control "
                                                     name="password" placeholder="Password" required>
 
@@ -410,13 +410,13 @@
                                         </div>
                                     </div>
 
-                                    <div class="mb-4">
+                                    <div class="">
                                         <textarea name="about" id="about" rows="5" style="min-height: 5rem" class="form-control  "
                                             placeholder="Tell us about you (optional)"></textarea>
                                         <span class="float-right">200</span>
                                     </div>
 
-                                    <div class="mb-4">
+                                    <div class="">
                                         <div class="">
                                             <button type="submit" class="w-full reg-btn border-2 py-2"
                                                 style="border-radius: 1rem; font-weight:900;">

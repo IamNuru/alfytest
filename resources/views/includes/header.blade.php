@@ -1,6 +1,6 @@
 <div class="container px-4 mx-auto ">
     <nav class="bg-white relative py-7 flex justify-between flex-wrap">
-      <a class="navbar-brand absolute" href="http://booking.luxetribes.com">
+      <a class="navbar-brand absolute font-semibold" href="http://booking.luxetribes.com">
         Luxe Tribes
       </a>
       <button
@@ -77,8 +77,6 @@
   <script>
       document.getElementById("toggler").addEventListener("click",function(e) {
           const t = document.getElementById("navbarNavAltMarkup")
-          t.classList.toggle("show")
-          t.style.maxHeight = "500px"
-          t.style.WebkitTransition = "max-height 1s ease-in"
+          t.classList.toggle("showNav")
       })
   </script>

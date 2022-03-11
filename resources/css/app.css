@@ -45,7 +45,6 @@ a {
 .collapse:not(.show) {
     /* display: none; */
     max-height: 0px;
-    overflow: hidden;
 }
 
 .showNav{

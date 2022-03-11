@@ -1,6 +1,6 @@
 <div class="container px-4 mx-auto ">
     <nav class="bg-white relative py-7 flex justify-between flex-wrap">
-      <a class="navbar-brand absolute font-semibold" href="http://booking.luxetribes.com">
+      <a class="navbar-brand absolute font-semibold" href="{{ route('home') }}">
         Luxe Tribes
       </a>
       <button
@@ -62,6 +62,16 @@
               <i class="fa fa-search"></i>
             </a>
           </li>
+          @auth
+          <li class="py-2">
+            <a
+              class="btn pb-1 border border-black rounded-xl font-bold py-2  px-2"
+              href="/login"
+            >
+              <i class="fa fa-user"></i> &nbsp;dashboard
+            </a>
+          </li>
+          @else
           <li class="py-2 ">
             <a
               class="btn pb-1 border border-black rounded-xl font-bold py-2  px-2"
@@ -70,6 +80,8 @@
               <i class="fa fa-user"></i> &nbsp;Log in
             </a>
           </li>
+          @endif
+          
         </ul>
       </div>
     </nav>
